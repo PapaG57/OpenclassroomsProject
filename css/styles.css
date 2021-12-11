@@ -1,0 +1,454 @@
+/* -------------------- BODY -------------------- */
+
+body {
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* codes généraux */
+.bleu {
+  color: #0065fc;
+}
+.gris {
+  color: #f2f2f2;
+}
+h4 {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo {
+  max-width: 100px;
+  max-height: 40px;
+}
+
+/* -------------------- HEADER -------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  padding: 0 130px 0 25px;
+  margin-left: 30px;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 60px;
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* nav a:hover {
+  border-top: 3px solid #0065fc;
+  opacity: 0.5;
+  padding-top: 32px;
+} */
+nav a:visited {
+  color: #0065fc;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* -------------------- TEXTE AVANT SECTION RECHERCHE -------------------- */
+
+.textRecherche {
+  font-size: 12px;
+  margin-left: 25px;
+  padding: 20px 50px 0 20px;
+}
+.textRecherche p {
+  font-size: 14px;
+}
+
+/* -------------------- RECHERCHE -------------------- */
+
+.iconeRecherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  width: 50px;
+  border-radius: 15px 0 0 15px;
+  background-color: #f2f2f2;
+}
+.recherche {
+  font-size: 16px;
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 50px;
+  border: #f2f2f2 solid 1px;
+  padding-left: 15px;
+}
+.rechercher {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 125px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #f2f2f2;
+  padding-left: 12px;
+  background-color: #0065fc;
+  border-radius: 0 15px 15px 0px;
+}
+.rechercher:hover {
+  background-color: #f2f2f2;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boutonIcone {
+  display: none;
+}
+/* les 3 blocs ensemble */
+.boutonRecherche {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 25px;
+}
+
+/* -------------------- FILTRES -------------------- */
+
+.motFiltres {
+  margin-right: 25px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.boutonFiltres {
+  display: flex;
+}
+.boutonFiltres i {
+  display: flex;
+  align-items: center;
+  color: #0065fc;
+}
+button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  padding: 0 16px 0 0;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 24px;
+  border: 2px solid #f2f2f2;
+  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+button:hover {
+  background-color: #0065fc;
+  color: #fff;
+  cursor: pointer;
+}
+.ico {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #deebff;
+  margin-right: 13px;
+  border-radius: 25px;
+}
+/* l'ensemble du block filtre */
+.tousFiltres {
+  margin: 25px 0 0 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+/* -------------------- LIGNE INFORMATIONS -------------------- */
+
+.info {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-left: 25px;
+}
+.iconeInfo {
+  color: #0065fc;
+}
+.cercleIcone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+/* -------------------- HERBERGEMENTS ET POPULAIRES -------------------- */
+
+/* dimension article hébergements */
+.hebergements {
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+/* hebergements */
+.imageh {
+  border-radius: 15px 15px 0 0;
+  width: 260px;
+  height: 130px;
+  object-fit: cover;
+}
+.titreHebergements {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.texteImage {
+  margin-left: 15px;
+  font-size: 13px;
+  line-height: 3px;
+}
+/* dimension des bloc d'images */
+.blockImage {
+  min-width: 260px;
+  min-height: 210px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+  line-height: 3px;
+}
+.blockImage:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* placements des images article hébergements */
+.placementImage1 {
+  display: flex;
+  flex-direction: row;
+}
+.placementImage2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+/* texte afficher plus */
+.afficher {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+/* -------------------- POPULAIRES -------------------- */
+
+/* dimensions article populaires */
+
+.titrePopulaires {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.imagep {
+  border-radius: 15px 0 0 15px;
+  width: 150px;
+  height: 140px;
+  object-fit: cover;
+}
+.texteImagep {
+  margin-left: 15px;
+  font-size: 13px;
+  line-height: 13px;
+}
+.etoilesp {
+  margin-top: 30px;
+}
+
+/* dimension article et block images populaires */
+
+.populaires {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  margin-left: 40px;
+}
+.blockImgPop {
+  display: flex;
+  width: 350px;
+  height: 130px;
+  padding: 5px;
+  margin: 0 0 37px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+  line-height: 3px;
+}
+.blockImgPop:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* alignements de la section hébergements et populaires */
+.sectionhp {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+/* -------------------- ACTIVITES -------------------- */
+
+.titreActivites {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.imagea {
+  border-radius: 15px 15px 0 0;
+  width: 420px;
+  height: 400px;
+  object-fit: cover;
+}
+.imagea2 {
+  border-radius: 15px 15px 0 0;
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+}
+.imagea3 {
+  border-radius: 15px 15px 0 0;
+  width: 320px;
+  height: 105px;
+  object-fit: cover;
+}
+.imagea4 {
+  border-radius: 15px 15px 0 0;
+  width: 320px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* dimensions article Activités */
+.blockImgAct {
+  max-width: 400px;
+  max-height: 600px;
+  margin-left: 30px;
+  font-size: 15px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+.blockImgAct:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.blockImgAct2 {
+  width: 320px;
+  height: 250px;
+  margin-left: 20px;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+.blockImgAct2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.blockImgAct3 {
+  width: 320px;
+  height: 150px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+.blockImgAct3:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.blockImgAct4 {
+  width: 320px;
+  height: 200px;
+  margin-right: 20px;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+.blockImgAct4:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* mise en place des images Activités */
+
+.activites {
+  display: flex;
+
+  width: 1430px;
+  height: 450px;
+  margin: 10px;
+}
+.clasbLockImg1 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-left: 30px;
+}
+.clasbLockImg2 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-left: 30px;
+}
+
+/* FOOTER */
+
+.tailleFooter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  margin-top: 60px;
+  padding-left: 40px;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+}
+.apropos {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.noshebergements {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-left: 250px;
+}
+.assistance {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-left: 250px;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #0065fc;
+}
